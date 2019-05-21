@@ -32,7 +32,7 @@ position: sticky;
 }
 .page {
   position: absolute;
-    top: 450px;
+    top: 300px;
     left: 320px;
     box-shadow: 0px 10px 10px grey;
     height:auto;

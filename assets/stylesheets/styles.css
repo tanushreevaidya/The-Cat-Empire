@@ -39,10 +39,10 @@ position: sticky;
 .page {
   position: absolute;
     top: 300px;
-    left: 320px;
+    left: 290px;
     box-shadow: 0px 10px 10px grey;
     height:auto;
-    width: 1000px;
+    width: 900px;
     background-color: #ffffff;
     padding: 20px;
     text-align: center;
@@ -53,8 +53,8 @@ position: sticky;
 .banner{
 position: absolute;
 top: 50px;
-left: 450px;
-width: 800px;
+left: 390px;
+width: 760px;
 }
 
 .vertical-menu

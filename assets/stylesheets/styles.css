@@ -37,7 +37,7 @@ position: sticky;
     right: 200px;
     box-shadow: 0px 10px 10px grey;
     height:auto;
-    width: 900px;
+    width: 700px;
     background-color: #ffffff;
     padding: 20px;
     text-align: center;
@@ -47,7 +47,7 @@ position: sticky;
 position: absolute;
 top: 50px;
 left: 300px;
-width: 900px;
+width: 800px;
 }
 
 .vertical-menu

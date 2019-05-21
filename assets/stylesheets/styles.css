@@ -47,7 +47,7 @@ position: sticky;
 position: absolute;
 top: 50px;
 left: 300px;
-width: -webkit-fill-available;
+width: 900px;
 }
 
 .vertical-menu

@@ -45,8 +45,9 @@ position: sticky;
 
 .banner{
 position: absolute;
-top: 100px;
-left: 400px;
+top: 50px;
+left: 300px;
+width: -webkit-fill-available;
 }
 
 .vertical-menu

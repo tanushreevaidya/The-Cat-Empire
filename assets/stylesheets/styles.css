@@ -30,6 +30,12 @@ position: sticky;
   padding: 20px;
   text-align: center;
 }
+
+.insertphoto{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .page {
   position: absolute;
     top: 300px;
@@ -42,11 +48,13 @@ position: sticky;
     text-align: center;
 }
 
+
+
 .banner{
 position: absolute;
 top: 50px;
 left: 300px;
-width: 800px;
+width: 700px;
 }
 
 .vertical-menu

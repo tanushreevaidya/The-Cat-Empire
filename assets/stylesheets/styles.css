@@ -13,6 +13,8 @@ body{
 margin-left: auto;
 margin-right: auto;
 text-align: justify;
+padding: 15px;
+  text-align: center;
 }
 
 .album-photo {

@@ -9,14 +9,16 @@ body{
     align-items: center;
     background-size: cover;
 }
-.disco-table {
 
-
+.dtable{
+  float: right;
+  page-break-after: right;
 }
+
 
 .album-photo {
 box-shadow: 10px 10px 20px grey;
-position: sticky;
+float: left;
 }
 
 .html5gallery {

@@ -18,7 +18,8 @@ body{
 
 .album-photo {
 box-shadow: 10px 10px 20px grey;
-float: left;
+margin: 30px;
+float: inherit;
 }
 
 

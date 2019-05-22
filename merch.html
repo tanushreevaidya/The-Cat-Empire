@@ -22,9 +22,9 @@
 <!-- everything above this is basic page stuff -->
 <div class="page">
   <button class="btn active" onclick="filterSelection('all')"> All</button>
-  <button class="btn" onclick="filterSelection('nature')">Men</button>
-  <button class="btn" onclick="filterSelection('cars')">Women</button>
-  <button class="btn" onclick="filterSelection('people')">Accessories</button>
+  <button class="btn" onclick="filterSelection('men')">Men</button>
+  <button class="btn" onclick="filterSelection('women')">Women</button>
+  <button class="btn" onclick="filterSelection('Accessories')">Accessories</button>
 
 <div class="row">
   <div class="Accessories">
@@ -91,7 +91,8 @@
             <img src="./assets/images/merch/w3.png" alt="TShirt" style="width:20%">
             <h4>$22</h4><h5>Tropical tee</h5>
           </div>
-        </div><div class="Women">
+        </div>
+        <div class="Women">
             <div class="content">
               <img src="./assets/images/merch/w4.jpg" alt="TShirt" style="width:20%">
               <h4>$22</h4><h5>Pink tee</h5>
@@ -101,10 +102,51 @@
 </div>
 </div>
 </div>
+
+</body>
 <script>
-function myFunction() {
- document.getElementById("./assets/javascripts/merch.js").innerHTML = "Paragraph changed.";
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
 }
 </script>
-</body>
 </html>

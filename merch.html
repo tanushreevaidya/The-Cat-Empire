@@ -3,6 +3,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./assets/stylesheets/styles.css">
+  <link href="./assets/stylesheets/lightbox.min.css" rel="stylesheet">
 <style>
 /* * {
   box-sizing: border-box;
@@ -121,83 +122,87 @@ h1 {
 <div class="row">
   <div class="column Accessories">
     <div class="content">
-      <img src="./assets/images/merch/a1.jpeg" alt="Mountains" style="width:200px">
+      <a href="./assets/images/merch/a1.jpeg"><img src="./assets/images/merch/a1.jpeg" data-lightbox="image 10" width="200px"></a>
       <h4>$19</h4><h5>T-shirt Patch</h5>
     </div>
   </div>
 
   <div class="column Accessories">
     <div class="content">
-    <img src="./assets/images/merch/a2.jpg" alt="Lights" style="width:200px">
+    <a href="./assets/images/merch/a2.jpg"><img src="./assets/images/merch/a2.jpg" data-lightbox="image 11" width="200px"></a>
     <h4>$12</h4><h5>Baseball cap</h5>
     </div>
   </div>
   <div class="column Accessories">
     <div class="content">
-    <img src="./assets/images/merch/a3.jpg" alt="Nature" style="width:200px">
+    <a href="./assets/images/merch/a3.jpg"><img src="./assets/images/merch/a3.jpg" data-lightbox="image 12" width="200px"></a>
 <h4>$15</h4><h5>Graphic Tote</h5>
     </div>
   </div>
 
   <div class="column Accessories">
     <div class="content">
-      <img src="./assets/images/merch/a4.jpg" alt="Car" style="width:200px">
+      <a href="./assets/images/merch/a4.jpg"><img src="./assets/images/merch/a4.jpg" data-lightbox="image 13" width="200px"></a>
         <h4>$12</h4><h5>Black Tote</h5>
   </div>
   </div>
 
   <div class="column male">
     <div class="content">
-      <img src="./assets/images/merch/m1.jpg" alt="Car" style="width:200px">
-      <h4>$22</h4><h5>Green tee</h5>
+      <a href="./assets/images/merch/m1.jpg"><img src="./assets/images/merch/m1.jpg" data-lightbox="image 14" width="270px"></a>
+        <h4>$22</h4><h5>Green tee</h5>
     </div>
   </div>
 
   <div class="column male">
     <div class="content">
-      <img src="./assets/images/merch/m2.jpg" alt="Car" style="width:200px">
+      <a href="./assets/images/merch/m2.jpg"><img src="./assets/images/merch/m2.jpg" data-lightbox="image 15" width="200px"></a>
       <h4>$22</h4><h5>Black jersey shirt</h5>
     </div>
   </div>
 
   <div class="column male">
     <div class="content">
-      <img src="./assets/images/merch/m3.png" alt="Car" style="width:200px">
+        <a href="./assets/images/merch/m3.png"><img src="./assets/images/merch/m3.png" data-lightbox="image 16" width="200px"></a>
       <h4>$22</h4><h5>Sleeveless Jersey</h5>
     </div>
   </div>
 
   <div class="column male">
     <div class="content">
-      <img src="./assets/images/merch/m4.png" alt="Car" style="width:200px">
+        <a href="./assets/images/merch/m4.png"><img src="./assets/images/merch/m4.png" data-lightbox="image 17" width="200px"></a>
       <h4>$22</h4><h5>Blue tee</h5>
     </div>
   </div>
 
   <div class="column women">
     <div class="content">
-      <img src="./assets/images/merch/w1.png" alt="Car" style="width:200px">
+
+        <a href="./assets/images/merch/w1.png"><img src="./assets/images/merch/w1.png" data-lightbox="image 18" width="200px"></a>
       <h4>$22</h4><h5>Tank top</h5>
     </div>
   </div>
 
   <div class="column women">
     <div class="content">
-    <img src="./assets/images/merch/w2.jpg" alt="Car" style="width:200px">
+
+        <a href="./assets/images/merch/w2.jpg"><img src="./assets/images/merch/w2.jpg" data-lightbox="image 19" width="200px"></a>
     <h4>$22</h4><h5>Aussie tee</h5>
     </div>
   </div>
 
   <div class="column women">
     <div class="content">
-    <img src="./assets/images/merch/w3.png" alt="Car" style="width:200px">
+
+        <a href="./assets/images/merch/w3.png"><img src="./assets/images/merch/w3.png" data-lightbox="image 20" width="200px"></a>
     <h4>$22</h4><h5>Tropical tee</h5>
     </div>
   </div>
 
   <div class="column women">
     <div class="content">
-    <img src="./assets/images/merch/w4.jpg" alt="Car" style="width:200px">
+
+        <a href="./assets/images/merch/w4.jpg"><img src="./assets/images/merch/w4.jpg" data-lightbox="image 21" width="200px"></a>
     <h4>$22</h4><h5>Pink tee</h5>
     </div>
   </div>
@@ -206,7 +211,13 @@ h1 {
 
 <!-- END MAIN -->
 </div>
-
+<script src="./assets/javascripts/lightbox.min.js">
+lightbox.option{
+  'resizeDuration': 200,
+  'wraparound': true
+  'maxwidth': 200,
+}
+</script>
 <script>
 filterSelection("all")
 function filterSelection(c) {

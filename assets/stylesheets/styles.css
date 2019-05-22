@@ -21,16 +21,6 @@ box-shadow: 10px 10px 20px grey;
 float: left;
 }
 
-.html5gallery {
-  position: absolute;
-  width: 800px;
-  height:1200px;
-  top: 400px;
-
-  background-color: #ffffff;
-  padding: 20px;
-  text-align: center;
-}
 
 .insert{
   padding-top: 30px;

@@ -1,114 +1,211 @@
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>The Cat Empire - About</title>
-    <link rel="stylesheet" href="./assets/stylesheets/styles.css">
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./assets/stylesheets/styles.css">
+<style>
+/* * {
+  box-sizing: border-box;
+}
 
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
 
-  </head>
+/* Center website */
+/* .main {
+  max-width: 1000px;
+  margin: auto;
+} */
+/*
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+/* } */
 
-    <body>
-        <div class="vertical-menu">
+.row {
+  /* margin: 10px -16px; */
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 30px;
+  justify-content: space-around;
+}
 
-            <img src="./assets/images/home/logo-big.png" width="150px" padding:"25px">
-            <a href="./index.html">Home</a>
-            <a href="./about.html">About</a>
-            <a href="./discography.html">Discography</a>
-            <a href="./tour-dates.html">Tour Dates</a>
-            <a href="./media.html">Media</a>
-            <a href="./merch.html">Shop</a>
-        </div>
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 20px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  margin: auto;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  cursor: pointer;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #ffffff;
+  color: #85bde1;
+}
+</style>
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="vertical-menu">
+
+    <img src="./assets/images/home/logo-big.png" width="150px" padding:"25px">
+    <a href="./index.html">Home</a>
+    <a href="./about.html">About</a>
+    <a href="./discography.html">Discography</a>
+    <a href="./tour-dates.html">Tour Dates</a>
+    <a href="./media.html">Media</a>
+    <a href="./merch.html">Shop</a>
+</div>
 <div class="banner">
-  <img src="./assets/images/merch/banner.jpg" width="760px">
+<img src="./assets/images/merch/banner.jpg" width="760px">
 </div>
 <!-- everything above this is basic page stuff -->
 <div class="page">
+<div id="myBtnContainer">
+  <!-- nature-men, cars - women, people-accessories -->
   <button class="btn active" onclick="filterSelection('all')"> All</button>
-  <button class="btn" onclick="filterSelection('men')">Men</button>
-  <button class="btn" onclick="filterSelection('women')">Women</button>
   <button class="btn" onclick="filterSelection('Accessories')">Accessories</button>
+  <button class="btn" onclick="filterSelection('male')">Men</button>
+  <button class="btn" onclick="filterSelection('women')">Women</button>
+</div>
 
+<!-- Portfolio Gallery Grid -->
 <div class="row">
   <div class="column Accessories">
     <div class="content">
-      <img src="./assets/images/merch/a1.jpeg" alt="Patch" style="width:20%">
+      <img src="./assets/images/merch/a1.jpeg" alt="Mountains" style="width:200px">
       <h4>$19</h4><h5>T-shirt Patch</h5>
     </div>
-    </div>
-    <div class="column Accessories">
-      <div class="content">
-        <img src="./assets/images/merch/a2.jpg" alt="Cap" style="width:20%">
-        <h4>$12</h4><h5>Baseball cap</h5>
-      </div>
-      </div>
+  </div>
 
   <div class="column Accessories">
-        <div class="content">
-          <img src="./assets/images/merch/a3.jpg" alt="Tote" style="width:20%">
-          <h4>$15</h4><h5>Graphic Tote</h5>
-        </div>
-        </div>
-        <div class="column Accessories">
-          <div class="content">
-            <img src="./assets/images/merch/a4.jpg" alt="Tote" style="width:20%">
-            <h4>$12</h4><h5>Black Tote</h5>
-          </div>
-          </div>
-
-  <div class="column Men">
     <div class="content">
-      <img src="./assets/images/merch/m1.jpg" alt="TShirt" style="width:20%">
+    <img src="./assets/images/merch/a2.jpg" alt="Lights" style="width:200px">
+    <h4>$12</h4><h5>Baseball cap</h5>
+    </div>
+  </div>
+  <div class="column Accessories">
+    <div class="content">
+    <img src="./assets/images/merch/a3.jpg" alt="Nature" style="width:200px">
+<h4>$15</h4><h5>Graphic Tote</h5>
+    </div>
+  </div>
+
+  <div class="column Accessories">
+    <div class="content">
+      <img src="./assets/images/merch/a4.jpg" alt="Car" style="width:200px">
+        <h4>$12</h4><h5>Black Tote</h5>
+  </div>
+  </div>
+
+  <div class="column male">
+    <div class="content">
+      <img src="./assets/images/merch/m1.jpg" alt="Car" style="width:200px">
       <h4>$22</h4><h5>Green tee</h5>
     </div>
   </div>
-  <div class="column Men">
+
+  <div class="column male">
     <div class="content">
-      <img src="./assets/images/merch/m3.png" alt="Sleevless TShirt" style="width:20%">
-      <h4>$22</h4><h5>Tank top</h5>
-    </div>
-  </div>
-</div>  <div class="column Men">
-    <div class="content">
-      <img src="./assets/images/merch/m2.jpg" alt="Jersey" style="width:20%">
+      <img src="./assets/images/merch/m2.jpg" alt="Car" style="width:200px">
       <h4>$22</h4><h5>Black jersey shirt</h5>
     </div>
   </div>
-<div class="column Men">
+
+  <div class="column male">
     <div class="content">
-      <img src="./assets/images/merch/m4.png" alt="TShirt" style="width:20%">
+      <img src="./assets/images/merch/m3.png" alt="Car" style="width:200px">
+      <h4>$22</h4><h5>Sleeveless Jersey</h5>
+    </div>
+  </div>
+
+  <div class="column male">
+    <div class="content">
+      <img src="./assets/images/merch/m4.png" alt="Car" style="width:200px">
       <h4>$22</h4><h5>Blue tee</h5>
     </div>
   </div>
 
-  <div class="column Women">
-      <div class="content">
-        <img src="./assets/images/merch/w1.png" alt="TShirt" style="width:20%">
-        <h4>$22</h4><h5>Tank top</h5>
-      </div>
+  <div class="column women">
+    <div class="content">
+      <img src="./assets/images/merch/w1.png" alt="Car" style="width:200px">
+      <h4>$22</h4><h5>Tank top</h5>
     </div>
-    <div class="column Women">
-        <div class="content">
-          <img src="./assets/images/merch/w2.jpg" alt="TShirt" style="width:20%">
-          <h4>$22</h4><h5>Aussie tee</h5>
-        </div>
-      </div>
-      <div class="column Women">
-          <div class="content">
-            <img src="./assets/images/merch/w3.png" alt="TShirt" style="width:20%">
-            <h4>$22</h4><h5>Tropical tee</h5>
-          </div>
-        </div>
+  </div>
 
-        <div class="column Women">
-            <div class="content">
-              <img src="./assets/images/merch/w4.jpg" alt="TShirt" style="width:20%">
-              <h4>$22</h4><h5>Pink tee</h5>
-            </div>
-          </div>
+  <div class="column women">
+    <div class="content">
+    <img src="./assets/images/merch/w2.jpg" alt="Car" style="width:200px">
+    <h4>$22</h4><h5>Aussie tee</h5>
+    </div>
+  </div>
+
+  <div class="column women">
+    <div class="content">
+    <img src="./assets/images/merch/w3.png" alt="Car" style="width:200px">
+    <h4>$22</h4><h5>Tropical tee</h5>
+    </div>
+  </div>
+
+  <div class="column women">
+    <div class="content">
+    <img src="./assets/images/merch/w4.jpg" alt="Car" style="width:200px">
+    <h4>$22</h4><h5>Pink tee</h5>
+    </div>
+  </div>
+<!-- END GRID -->
 </div>
+
+<!-- END MAIN -->
 </div>
-</div>
-</div>
+
 <script>
 filterSelection("all")
 function filterSelection(c) {
@@ -154,6 +251,6 @@ for (var i = 0; i < btns.length; i++) {
   });
 }
 </script>
-</body>
 
+</body>
 </html>

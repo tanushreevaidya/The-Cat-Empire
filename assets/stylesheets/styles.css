@@ -29,6 +29,19 @@ float: inherit;
   padding-bottom: 30px;
 }
 
+.sold{
+  position: relative;
+}
+
+.text-block{
+  position: relative;
+   top: 0px;
+   right: 0px;
+   background-color: #85bde1;
+   color: white;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
 .page {
   position: absolute;
     top: 350px;
